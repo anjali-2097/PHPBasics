@@ -1,0 +1,131 @@
+.error,.errordata,.login_error{
+	color: #FB9678;
+	font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.lblerror label.error {
+color: #FB9678;
+position: absolute;
+width: 100%;
+top: 33px;
+line-height: 14px;
+left: 0px;
+}
+
+/* The container */
+.checkboxcont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxcont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 25;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #000;
+  
+}
+.checkmarkradio{
+	position: absolute;
+  top: 25;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #000;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxcont:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxcont input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxcont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxcont .checkmark:after {
+  top: 4px;
+    left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Style the indicator (dot/circle) */
+.checkboxcont .checkmarkradio:after {
+ 	top: 5px;
+    left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+select.input-sm {
+    line-height: 20px !important;
+}
+.remove_img_preview {
+    position:relative;
+    top:-15px;
+    right:10px;
+    background:black;
+    color:white;
+    border-radius:50px;
+    font-size:0.9em;
+    padding: 0 0.3em 0;
+    text-align:center;
+    cursor:pointer;
+}
+.remove_img_preview:before {
+    content: "×";
+}
+
+.session_data {
+  color: green !important;
+  font-weight: bold !important;
+  font-size: 16px;
+  font-family: serif;
+}
